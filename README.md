@@ -39,26 +39,12 @@ Now that we've established the intent lets delete the default response and expan
 Before we proceed further let's ensure our intent will get a response from webhook requests. Let's head over to Mockable and create a Rest Mock. 
 
 Under path create our path as shown below:
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Integrating-Dialogflow0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Integrating-Dialogflow0.png "image_tooltip")
-
+![Create path](https://raw.githubusercontent.com/ssathya/President/master/Presidents/Images/First.png)
 
 Make sure you set your path as President and also select Post as your Verb. _It took me some time to digest that requests come as POST. We are getting data and why do we have to use POST verb. Google has some writeup why it is done so but I'm not convinced._
 
 Now update your Response body as follows:
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Integrating-Dialogflow1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Integrating-Dialogflow1.png "image_tooltip")
-
+![Response](https://raw.githubusercontent.com/ssathya/President/master/Presidents/Images/Second.png)
 
 Save and Start your mock. Also, copy your path; in my case its [https://demo6808454.mockable.io/President](https://demo6808454.mockable.io/President). 
 
@@ -212,4 +198,3 @@ Now head back to Dialogflow and under "Fulfillment" change the URL to [https://{
 All well; we can deploy our Azure function at Azure, change the URL in DialogFlow to point to our Azure endpoint or make the application work in making the application better. 
 
 We'll make the application better in the next part.
-
