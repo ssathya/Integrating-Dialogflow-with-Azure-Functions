@@ -27,12 +27,12 @@ namespace Presidents
 			string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 			WebhookRequest request;
 			request = jsonParser.Parse<WebhookRequest>(requestBody);
-			var name = request.QueryResult.Parameters.Fields["presidentName"].ToString().Replace("\"", "");
+			var firstParamName = request.QueryResult.Parameters.Fields["presidentName"].ToString().Replace("\"", "");
 
 
 			var response = new WebhookResponse
 			{
-				FulfillmentText = $"Hello {name}"
+				FulfillmentText = $"Hello {firstParamName}"
 			};
 			log.LogInformation("Ending Presidnet service");
 			return new ContentResult
