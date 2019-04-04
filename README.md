@@ -189,7 +189,7 @@ ngrok http 7071 -host-header="localhost:7071"
 ```
 
 
-_Of course, if Core tools use an alternate port you need to adjust your ports accordingly. _
+*Of course, if Core tools use an alternate port you need to adjust your ports accordingly.* 
 
 Once ngrok launches it will give you forwarding URLs: both HTTP and HTTPS. We are interested only in the HTTPS URL (E.g. https://ba0cb49f.ngrok.io -> [http://localhost:7071](http://localhost:7071) ).
 
